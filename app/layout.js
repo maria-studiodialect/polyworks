@@ -5,14 +5,14 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Polyworks Studio",
+  title: "POLYWORKS",
   description: "Launching soon",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="overflow-hidden">{children}</body>
     </html>
   );
 }
