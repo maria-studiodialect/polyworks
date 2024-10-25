@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { TfiEmail } from "react-icons/tfi";
 import { motion } from 'framer-motion';
 
+
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -15,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="aeonik flex flex-col h-screen w-screen justify-center md:justify-between items-center bg-black text-white pb-16 pt-10 md:pt-4 md:pb-16 overflow-hidden">
+    <div className="aeonik flex flex-col h-screen w-screen justify-center justify-between items-center bg-black text-white pb-24 pt-10 md:pt-4 md:pb-16 overflow-hidden">
       <div>
         {isClient && (
           <Image
@@ -28,7 +29,7 @@ export default function Home() {
           />
         )}
       </div>
-      <Link href="mailto:info@polyworks.studio" className="mt-10 md:mt-20 flex justify-center tracking-wider text-xs hover:underline">
+      <Link href="mailto:info@polyworks.studio" className="md:mt-20 flex justify-center tracking-wider text-xs hover:underline">
         CONTACT
       </Link>
     </div>
