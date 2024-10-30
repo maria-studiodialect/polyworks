@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="aeonik flex flex-col h-screen w-screen justify-center justify-between items-center bg-black text-white pb-[22vh] pt-10 md:pt-4 md:pb-16 overflow-hidden">
+    <div className="aeonik flex flex-col h-screen w-screen justify-center justify-between items-center bg-black text-white pb-[22vh] pt-24 md:pt-4 md:pb-16 overflow-hidden">
       <div>
         {isClient && (
           <Image
